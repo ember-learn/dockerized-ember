@@ -1,6 +1,6 @@
 # Dockerized Ember
 
-This repository is home to home to all the docker images for ember to help the development process be more streamlined and easy to setup.
+This repository is home to all the docker images for ember to help the development process be more streamlined and easy to setup.
 For most/all projects, the only commands to get up and running are:
 
 ```bash
