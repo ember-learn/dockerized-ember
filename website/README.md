@@ -12,7 +12,7 @@ services:
     ports:
       - "4567:4567"
     volumes:
-      - .:/guides
+      - .:/src
 ```
 
 

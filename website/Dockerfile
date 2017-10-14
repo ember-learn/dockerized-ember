@@ -18,14 +18,14 @@ RUN apt-get update && apt-get -y install $PACKAGES
 
 # Fix the Bundler version
 RUN gem install bundler -v $BUNDLER_VERSION
-RUN mkdir /guides
+RUN mkdir /src
 
-WORKDIR /guides
+WORKDIR /src
 
-ADD Gemfile /guides/Gemfile
-ADD Gemfile.lock /guides/Gemfile.lock
+ADD Gemfile /src/Gemfile
+ADD Gemfile.lock /src/Gemfile.lock
 RUN bundle install
 
-ADD . /guides
+ADD . /src
 
 CMD bundle exec middleman

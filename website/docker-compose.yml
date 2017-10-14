@@ -1,0 +1,13 @@
+# This docker-compose file is for testing the build
+# and making sure that the docs agree with what works.
+version: '2'
+services:
+  website:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: bundle exec middleman
+    ports:
+      - "4567:4567"
+    volumes:
+      - .:/src
