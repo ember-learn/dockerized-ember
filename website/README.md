@@ -7,7 +7,7 @@
 version: '2'
 services:
   guides:
-    image: dockerizedember/ember-website-dev
+    image: dockerizedember/website-dev
     command: bundle exec middleman
     ports:
       - "4567:4567"
